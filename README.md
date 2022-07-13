@@ -1,8 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Prerequisites
 
-## Getting Started
+You will need [Node.js](https://nodejs.org) version 8.0 or greater installed on your system.
 
-First, run the development server:
+## Setup
+
+Get the code by either cloning this repository using git
+
+```
+https://github.com/thebishalniroula/movies-library-website-nextjs.git
+```
+
+... or [downloading source code](https://github.com/thebishalniroula/movies-library-website-nextjs/archive/refs/heads/main.zip) code as a zip archive.
+
+
+Once downloaded, open the terminal in the project directory, and install dependencies with:
+
+```
+npm install
+```
+
+Go to [TBDB](https://www.themoviedb.org/) and get an API access Key.
+
+Once you get an API key, set up environment variables with:
+
+```
+echo "API_KEY=<<Your api key>>" >> .env.local
+```
+
+Then run the development server with:
 
 ```bash
 npm run dev
@@ -10,5 +35,5 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to run the app.
 
