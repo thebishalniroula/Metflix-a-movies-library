@@ -1,0 +1,61 @@
+.container {
+  padding: 0 5%;
+  margin-top: 2rem;
+}
+.cast {
+  display: flex;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+.cast::after {
+  content: "";
+  flex: auto;
+}
+.imageWrapper {
+  position: relative;
+  height: 14.0625rem;
+  width: 9.375rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card {
+}
+
+.card p {
+  width: 150px;
+  color: aliceblue;
+  margin-top: 1rem;
+}
+.showmore {
+  color: aliceblue;
+  text-align: right;
+  cursor: pointer;
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.showmore:hover {
+  text-decoration: underline;
+}
+
+.title {
+  margin-bottom: 0.5rem;
+  color: aliceblue;
+  font-size: 1.5rem;
+  /* padding: 0 3rem; */
+  position: relative;
+  display: block;
+  padding-bottom: 1rem;
+}
+.title::after {
+  top: 80%;
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 12rem;
+  display: block;
+  background-color: rgb(180, 143, 8);
+}

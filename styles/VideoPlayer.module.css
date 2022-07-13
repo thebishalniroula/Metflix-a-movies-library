@@ -1,0 +1,24 @@
+.videoContainer {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.45);
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+}
+
+.videoContainer iframe {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%; /* Need a specific value to work */
+  height: 85vh;
+}

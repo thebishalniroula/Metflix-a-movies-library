@@ -1,0 +1,29 @@
+.container {
+  padding: 0 5%;
+  margin-top: 2rem;
+}
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.title {
+  margin-bottom: 0.5rem;
+  color: aliceblue;
+  font-size: 1.5rem;
+  /* padding: 0 3rem; */
+  position: relative;
+  display: block;
+  padding-bottom: 1rem;
+  position: sticky;
+  top: 1rem;
+}
+.title::after {
+  top: 80%;
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 12rem;
+  display: block;
+  background-color: rgb(180, 143, 8);
+}

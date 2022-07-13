@@ -1,16 +1,46 @@
 html,
 body {
+  scroll-behavior: smooth !important;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "poppins";
+  background-color: rgb(23, 68, 68);
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth !important;
+  transition: all 0.5s;
 }
 
 * {
+  scroll-behavior: smooth !important;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  transition: all 0.5s;
+}
+
+.padding {
+  padding: 0rem 3rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(232, 234, 234, 0.669);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(122, 132, 132);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(176, 173, 173);
 }

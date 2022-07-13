@@ -1,0 +1,14 @@
+.footer {
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  justify-content: space-between;
+  padding: 0 20%;
+  margin-top: 2rem;
+  background-color: rgb(17, 95, 95);
+}
+
+.footer a {
+  color: rgb(228, 230, 232);
+}

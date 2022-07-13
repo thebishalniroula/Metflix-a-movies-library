@@ -1,0 +1,114 @@
+.wrapper {
+  margin-top: 2rem;
+  padding: 0 5%;
+}
+
+.title {
+  margin-bottom: 0.5rem;
+  color: aliceblue;
+  font-size: 1.5rem;
+  /* padding: 0 3rem; */
+  position: relative;
+  display: block;
+  padding-bottom: 1rem;
+}
+.title::after {
+  top: 80%;
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 12rem;
+  display: block;
+  background-color: rgb(180, 143, 8);
+}
+
+.imageWrapper {
+  position: relative;
+  height: 225px;
+  width: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  gap: 0.8rem;
+  overflow-y: scroll;
+  position: relative;
+  transition: 1s all ease;
+}
+.container .scrollBtnRight {
+  position: sticky;
+  color: rgba(207, 210, 212, 0);
+  font-size: 40px;
+  right: 0rem;
+  border: none;
+  background: none;
+  height: 225px;
+  width: 50px;
+  background-color: rgba(98, 100, 101, 0);
+  transition: all 1s;
+  z-index: 99999999;
+}
+
+.container:hover .scrollBtnRight {
+  color: rgb(207, 210, 212);
+  background-color: rgba(131, 131, 131, 0.728);
+}
+
+.iconWrapper {
+  position: relative;
+  /* background-color: red; */
+  z-index: 900000;
+  left: 5%;
+  top: 2%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.rating {
+  display: block;
+  color: aliceblue;
+  font-size: 14px;
+}
+
+.card {
+  position: relative;
+  cursor: pointer;
+
+  /* background-color: rgba(32, 90, 90, 0.822); */
+}
+.card h6 {
+  color: aliceblue;
+  font-weight: normal;
+  font-size: 1rem;
+  margin-top: 1rem;
+  width: 9.375rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.imageWrapper {
+  overflow: hidden;
+  transition: transform 0.1s;
+}
+.imageWrapper:hover {
+  transform: scale(1.02);
+}
+.overlay {
+  z-index: 50;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.231);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.star {
+  position: absolute;
+  z-index: 10000;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}

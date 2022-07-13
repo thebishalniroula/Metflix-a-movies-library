@@ -1,0 +1,124 @@
+.wrapper {
+  min-height: 100vh;
+  background-color: rgb(23, 68, 68);
+}
+
+.nav {
+  position: relative;
+  height: 8vh;
+  background-color: rgb(17, 95, 95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  cursor: pointer;
+}
+.logo span {
+  color: aliceblue;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  display: block;
+  margin-left: 5px;
+}
+.links {
+  flex: 4;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.links a {
+  text-decoration: none;
+  color: aliceblue;
+  text-transform: capitalize;
+}
+
+.search {
+  height: 2.5rem;
+  display: block;
+  padding: 1rem;
+  font-size: 14px;
+  border-radius: 999px;
+  outline: none;
+  border: none;
+  width: 100%;
+  transition: width 0.1s ease-in;
+}
+
+.searchWrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  position: relative;
+  transition: width 0.1s ease-in;
+}
+.searchResults {
+  min-height: 0px;
+  max-height: 58vh;
+  overflow-y: scroll;
+  width: 25rem;
+  /* border: 1px solid rgb(23, 68, 68); */
+  background-color: rgb(17, 95, 95);
+  z-index: 10000;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  display: none;
+}
+.searchResultItem {
+  border: 1px solid rgb(216, 216, 216);
+  padding: 0.1rem 0.1rem;
+  border-collapse: collapse;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.searchDetails {
+  flex: 4;
+}
+
+.searchDetails h5 {
+  color: aliceblue;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.searchResults p {
+  color: aliceblue;
+  font-size: 0.8rem;
+  display: flex;
+  gap: 0.2rem;
+}
+.searchResults:hover {
+  display: block;
+}
+.searchResults::-webkit-scrollbar {
+  width: 2px;
+}
+.searchResults::-webkit-scrollbar-track {
+  background: rgb(28, 139, 139);
+}
+.search:focus + .searchResults {
+  display: block;
+}
+.search:focus {
+  width: 25rem;
+  position: absolute;
+  transition: width 0.1s ease-in;
+}
+.imageWrapper {
+  flex: 1;
+  position: relative;
+  height: 5rem;
+  width: 3.75rem;
+}
