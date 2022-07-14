@@ -33,6 +33,7 @@ const Review = ({ item }) => {
                 height={60}
                 width={60}
                 className={styles.avatar}
+                alt="profile photo"
               />
             ) : (
               <Image
@@ -40,6 +41,7 @@ const Review = ({ item }) => {
                 height={60}
                 width={60}
                 className={styles.avatar}
+                alt="profile photo"
               />
             )}
 

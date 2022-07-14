@@ -39,9 +39,14 @@ const Cast = ({ cast: casts }) => {
                     <Image
                       src={`https://image.tmdb.org/t/p/original/${item.profile_path}`}
                       layout="fill"
+                      alt={"profile photo"}
                     />
                   ) : (
-                    <Image src={person} layout="fill" />
+                    <Image
+                      src={person}
+                      layout="fill"
+                      alt={"profile photo placeholder"}
+                    />
                   )}
                 </div>
                 <p key={index}>{item.name}</p>

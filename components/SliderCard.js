@@ -8,13 +8,20 @@ const SliderCard = ({ item }) => {
       <div className={styles.imageWrapper}>
         <div className={styles.overlay}></div>
         <div className={styles.iconWrapper}>
-          <Image src={star} height={15} width={15} className={styles.star} />
+          <Image
+            src={star}
+            height={15}
+            width={15}
+            className={styles.star}
+            alt={"star"}
+          />
           <span className={styles.rating}>{item.vote_average}</span>
         </div>
         <Image
           src={`https://image.tmdb.org/t/p/original/${item.poster_path}`}
           layout="fill"
           className={styles.cardImage}
+          alt={"Movie poster"}
         />
       </div>
       <h6>{item.title}</h6>

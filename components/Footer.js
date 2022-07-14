@@ -18,7 +18,7 @@ const Footer = () => {
         </p>
         <Link href={"https://tmdb.org"}>
           <div className={styles.footerImage}>
-            <Image src={tmdbLogo} height={80} width={80} />
+            <Image src={tmdbLogo} height={80} width={80} alt={"TMDB logo"} />
           </div>
         </Link>
       </div>
@@ -29,7 +29,12 @@ const Footer = () => {
         </p>
         <Link href={"https://nextjs.org/"}>
           <div className={styles.footerImage}>
-            <Image src={nextjsLogo} height={60} width={100} />
+            <Image
+              src={nextjsLogo}
+              height={60}
+              width={100}
+              alt={"Nextjs logo"}
+            />
           </div>
         </Link>
       </div>
@@ -58,17 +63,27 @@ const Footer = () => {
         <div className={styles.socialLinks}>
           <Link href={"https://github.com/thebishalniroula/"}>
             <div className={styles.footerImage}>
-              <Image src={github} height={40} width={40} />
+              <Image src={github} height={40} width={40} alt={"Github logo"} />
             </div>
           </Link>
           <Link href={"https://facebook.com/thebishalniroula"}>
             <div className={styles.footerImage}>
-              <Image src={facebookLogo} height={50} width={50} />
+              <Image
+                src={facebookLogo}
+                height={50}
+                width={50}
+                alt={"Facebook logo"}
+              />
             </div>
           </Link>
           <Link href={"https://twitter.com/thbishalniroula/"}>
             <div className={styles.footerImage}>
-              <Image src={twitterLogo} height={50} width={50} />
+              <Image
+                src={twitterLogo}
+                height={50}
+                width={50}
+                alt={"Twitter logo"}
+              />
             </div>
           </Link>
         </div>

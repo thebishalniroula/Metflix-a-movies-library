@@ -42,21 +42,22 @@ const Nav = () => {
           <input
             type="text"
             className={styles.search}
-            placeholder="Search movies, tv shows..."
+            placeholder="Search..."
             onChange={(e) => {
               e.preventDefault();
               fetchSearchResults(e.target.value);
             }}
           />
           <div className={styles.searchResults}>
-            {results.map((item) => {
+            {results.map((item, index) => {
               return (
-                <Link href={`/movie/${item.id}`}>
+                <Link key={index} href={`/movie/${item.id}`}>
                   <div className={styles.searchResultItem}>
                     <div className={styles.imageWrapper}>
                       <Image
                         src={`https://image.tmdb.org/t/p/original/${item.poster_path}`}
                         layout="fill"
+                        alt="logo"
                       />
                     </div>
                     <div className={styles.searchDetails}>

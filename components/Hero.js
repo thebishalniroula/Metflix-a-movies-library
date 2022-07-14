@@ -53,7 +53,7 @@ const Hero = ({ data }) => {
               setPlayVideo(true);
             }}
           >
-            <Image src={playicon} height={16} width={16} />
+            <Image src={playicon} height={16} width={16} alt={"play button"} />
             <p>Play trailer</p>
           </button>
         </div>
