@@ -27,7 +27,7 @@ const Video = ({ id, setPlayVideo }) => {
         <iframe
           src={`https://www.youtube.com/embed/${key}`}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
-          frameborder="0"
+          frameBorder="0"
           allowFullScreen
           title="Embeded video"
         ></iframe>
