@@ -124,7 +124,8 @@
 }
 @media (max-width: 450px) {
   .search {
-    height: 6vh;
+    height: 3rem;
+    width: 40vw;
     width: 40vw;
   }
 

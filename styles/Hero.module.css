@@ -79,6 +79,9 @@
   .container {
     height: 92vh;
   }
+  .description {
+    width: 100%;
+  }
 }
 @media (max-width: 900px) {
   .title {
