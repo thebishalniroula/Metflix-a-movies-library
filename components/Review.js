@@ -4,19 +4,13 @@ import { useState, useEffect, useRef } from "react";
 import { Rating } from "react-simple-star-rating";
 
 const Review = ({ item }) => {
-  console.log(item);
   const [showShowMore, setShowShowMore] = useState(true);
   const reviewRef = useRef(null);
   useEffect(() => {
     if (reviewRef.current) {
       const node = reviewRef.current;
-      console.log(node);
-      console.log("clientHeight", node.clientHeight);
-      console.log("scrollHeight", node.scrollHeight);
       if (node.clientHeight == node.scrollHeight) {
         setShowShowMore(false);
-        console.log("clientHeight", node.clientHeight);
-        console.log("scrollHeight", node.scrollHeight);
       }
     }
   });

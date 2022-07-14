@@ -1,5 +1,4 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
 import React from "react";
 import Slider from "../components/Slider";
 import Hero from "../components/Hero";
@@ -12,7 +11,6 @@ function Home({ nowPlaying, popular, topRated, upcoming, random }) {
         <meta name="description" content="This is a project done by Bishal." />
         <link rel="icon" href="/MOVIES.png" />
       </Head>
-      <div className={styles.container}></div>
       <Hero data={random} />
       <Slider data={nowPlaying} title={"Now playing"} />
       <Slider data={popular} title={"Popular"} />
