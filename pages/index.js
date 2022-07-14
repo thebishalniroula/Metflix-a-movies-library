@@ -8,11 +8,6 @@ function Home({ nowPlaying, popular, topRated, upcoming, random }) {
     <>
       <Head>
         <title>Movie App</title>
-        <meta
-          name="description"
-          content="This is a project done by Bishal in Next js."
-        />
-        <link rel="icon" href="/MOVIES.png" />
       </Head>
       <Hero data={random} />
       <Slider data={nowPlaying} title={"Now playing"} />
