@@ -122,3 +122,21 @@
   height: 5rem;
   width: 3.75rem;
 }
+@media (max-width: 450px) {
+  .search {
+    height: 6vh;
+    width: 40vw;
+  }
+
+  .search:focus {
+    width: 90vw;
+  }
+}
+@media (max-width: 800px) {
+  .links {
+    display: none;
+  }
+  .search {
+    width: 60%;
+  }
+}

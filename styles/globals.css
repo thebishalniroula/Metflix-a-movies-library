@@ -9,7 +9,6 @@ body {
 html {
   overflow-y: scroll;
   scroll-behavior: smooth !important;
-  transition: all 0.5s;
 }
 
 * {
@@ -17,7 +16,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 
 .padding {
@@ -43,4 +42,9 @@ html {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(176, 173, 173);
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
 }

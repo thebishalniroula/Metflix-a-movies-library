@@ -1,23 +1,24 @@
 import styles from "../styles/MovieExcerpt.module.css";
 const MovieExcerpt = ({ data }) => {
   return (
-    <div className={styles.card}>
+    <>
       <div>
-        <h4>Rating</h4>
+        <h4 className={styles.h4}>Rating</h4>
         <p className={styles.p}>
-          *****{` ${data.vote_average} (${data.vote_count} votes)`}
+          {"⭐"}
+          {` ${data.vote_average} (${data.vote_count} votes)`}
         </p>
       </div>
       <div>
-        <h4>Popularity score</h4>
+        <h4 className={styles.h4}>Popularity score</h4>
         <p className={styles.p}>{`${data.popularity}`}</p>
       </div>
       <div>
-        <h4>Release date</h4>
+        <h4 className={styles.h4}>Release date</h4>
         <p className={styles.p}>{` ${data.release_date}`}</p>
       </div>
       <div>
-        <h4>Runtine</h4>
+        <h4 className={styles.h4}>Runtine</h4>
         {data.runtime ? (
           <p className={styles.p}>{`${data.runtime} minutes`}</p>
         ) : (
@@ -25,7 +26,7 @@ const MovieExcerpt = ({ data }) => {
         )}
       </div>
       <div>
-        <h4>Revenue</h4>
+        <h4 className={styles.h4}>Revenue</h4>
         {data.revenue ? (
           <p className={styles.p}>{`$${data.revenue}`}</p>
         ) : (
@@ -33,7 +34,7 @@ const MovieExcerpt = ({ data }) => {
         )}
       </div>
       <div>
-        <h4>Languages</h4>
+        <h4 className={styles.h4}>Languages</h4>
         {data.spoken_languages.map((item, index) => {
           if (index === 0) {
             return (
@@ -52,10 +53,10 @@ const MovieExcerpt = ({ data }) => {
         })}
       </div>
       <div>
-        <h4>Original language</h4>
+        <h4 className={styles.h4}>Original language</h4>
         <p className={styles.p}>{`${data.original_language}`}</p>
       </div>
-    </div>
+    </>
   );
 };
 

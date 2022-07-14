@@ -7,9 +7,15 @@ const Details = ({ data, reviews }) => {
       <div className={styles.container}>
         <h2 className={styles.title}>Reviews</h2>
         <div className={styles.details}>
-          <MovieExcerpt data={data} />
-          <Reviews reviews={reviews} />
-          <MovieExcerpt data={data} />
+          <div className={`${styles.card} ${styles.firstCard}`}>
+            <MovieExcerpt data={data} />
+          </div>
+          <div className={styles.reviewsCard}>
+            <Reviews reviews={reviews} />
+          </div>
+          <div className={`${styles.card} ${styles.lastCard}`}>
+            <MovieExcerpt data={data} />
+          </div>
         </div>
       </div>
     </>

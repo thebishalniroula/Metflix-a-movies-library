@@ -3,24 +3,17 @@
   margin-top: 2rem;
 }
 .cast {
-  display: flex;
-  /* justify-content: center; */
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9.375rem, auto));
+  gap: 1.5rem;
 }
-.cast::after {
-  content: "";
-  flex: auto;
-}
+
 .imageWrapper {
   position: relative;
   height: 14.0625rem;
   width: 9.375rem;
   border-radius: 10px;
   overflow: hidden;
-}
-.card {
 }
 
 .card p {
@@ -58,4 +51,10 @@
   width: 12rem;
   display: block;
   background-color: rgb(180, 143, 8);
+}
+@media (max-width: 450px) {
+  .cast {
+    /* justify-content: center; */
+    gap: 1rem;
+  }
 }

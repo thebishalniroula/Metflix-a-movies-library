@@ -1,27 +1,15 @@
-.card {
-  flex: 1;
-  background-color: rgb(17, 95, 95);
-  padding: 1rem;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  align-self: flex-start;
-  position: sticky;
-  top: 5rem;
-}
-.card h4 {
+.h4 {
   color: rgb(222, 176, 10);
   font-weight: normal;
   font-size: 1rem;
 }
-.card .p,
-.card .span {
+.p,
+.span {
   color: rgb(207, 213, 219);
   font-weight: normal;
   font-size: 1rem;
 }
 
-.card .na {
+.na {
   color: rgb(149, 157, 165);
 }

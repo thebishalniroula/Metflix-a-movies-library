@@ -7,7 +7,6 @@
   margin-bottom: 0.5rem;
   color: aliceblue;
   font-size: 1.5rem;
-  /* padding: 0 3rem; */
   position: relative;
   display: block;
   padding-bottom: 1rem;
@@ -111,4 +110,12 @@
 
 .container::-webkit-scrollbar {
   display: none;
+}
+
+@media (max-width: 900px) {
+  .title {
+    font-size: 1.25rem;
+    margin-bottom: 0.4rem;
+    padding-bottom: 0.85rem;
+  }
 }

@@ -1,14 +1,56 @@
 .footer {
-  color: aliceblue;
-  display: flex;
-  align-items: center;
-  height: 3rem;
-  justify-content: space-between;
-  padding: 0 20%;
-  margin-top: 2rem;
+  padding: 2rem 5%;
   background-color: rgb(17, 95, 95);
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: rgb(15, 96, 96);
+}
+.footer div {
+  flex: 1;
+  flex-basis: 150px;
+}
+.title {
+  font-size: 1rem;
+  color: rgb(231, 232, 234);
+  font-weight: 600;
+  position: relative;
+  text-transform: uppercase;
+}
+.description {
+  color: rgb(209, 213, 217);
+  font-size: 1rem;
+  margin-top: 0.5rem;
 }
 
+.title::after {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 0.1rem;
+  width: 70%;
+  background-color: rgb(180, 143, 8);
+}
+.footer img {
+  cursor: pointer;
+}
 .footer a {
-  color: rgb(228, 230, 232);
+  cursor: pointer;
+  color: white;
+}
+
+.footerImage img:hover {
+  filter: invert(80%);
+}
+.socialLinks > a {
+  display: block;
+}
+.socialLinks {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 8rem;
 }

@@ -15,8 +15,6 @@
   position: relative;
   display: block;
   padding-bottom: 1rem;
-  position: sticky;
-  top: 1rem;
 }
 .title::after {
   top: 80%;
@@ -26,4 +24,48 @@
   width: 12rem;
   display: block;
   background-color: rgb(180, 143, 8);
+}
+.card {
+  flex: 1;
+  /* flex-basis: 225px; */
+  /* max-width: 20%; */
+  background-color: rgb(17, 95, 95);
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-basis: 12rem;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-self: flex-start;
+  position: sticky;
+  top: 2rem;
+}
+
+.reviewsCard {
+  flex: 4;
+  background-color: rgb(17, 95, 95);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 99999999;
+  max-width: 100%;
+  min-width: 50%;
+}
+
+@media (max-width: 996px) {
+  .card {
+    position: static;
+    order: 1;
+  }
+  .reviewsCard {
+    order: 2;
+  }
+}
+
+@media (max-width: 410px) {
+  .details {
+    gap: 1rem;
+  }
 }
