@@ -22,7 +22,7 @@ function Home({ nowPlaying, popular, topRated, upcoming, random }) {
     </>
   );
 }
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const resNP = await fetch(`
   https://api.themoviedb.org/3/movie/now_playing?api_key=${process.env.API_KEY}&language=en-US&page=1`);
   const dataNP = await resNP.json();
