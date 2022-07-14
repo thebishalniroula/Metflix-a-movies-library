@@ -123,10 +123,14 @@
   width: 3.75rem;
 }
 @media (max-width: 450px) {
+  .searchWrapper {
+    /* flex: 3; */
+  }
+  .nav {
+    height: 4rem;
+  }
   .search {
     height: 3rem;
-    width: 40vw;
-    width: 40vw;
   }
 
   .search:focus {
