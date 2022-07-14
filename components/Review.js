@@ -13,7 +13,7 @@ const Review = ({ item }) => {
         setShowShowMore(false);
       }
     }
-  });
+  }, []);
   return (
     <>
       <div className={styles.review}>

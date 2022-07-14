@@ -26,7 +26,7 @@ const Nav = () => {
       <nav className={styles.nav}>
         <Link href={"/"}>
           <div className={styles.logo}>
-            <Image src={Movies} height={40} width={40} />
+            <Image src={Movies} height={40} width={40} alt={"logo"} />
             <span>OVIES</span>
           </div>
         </Link>
@@ -57,7 +57,7 @@ const Nav = () => {
                       <Image
                         src={`https://image.tmdb.org/t/p/original/${item.poster_path}`}
                         layout="fill"
-                        alt="logo"
+                        alt="poster"
                       />
                     </div>
                     <div className={styles.searchDetails}>

@@ -14,7 +14,7 @@ const Video = ({ id, setPlayVideo }) => {
         }
       });
     })();
-  }, []);
+  }, [id]);
 
   return (
     <div
