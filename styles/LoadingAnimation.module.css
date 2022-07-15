@@ -6,6 +6,7 @@
   height: 3px;
   z-index: 999999999999;
   animation: loading 3s linear;
+  animation-fill-mode: forwards;
 }
 
 @keyframes loading {
