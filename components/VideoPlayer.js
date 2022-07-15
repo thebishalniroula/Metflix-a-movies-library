@@ -1,20 +1,14 @@
 import styles from "../styles/VideoPlayer.module.css";
 import { useEffect, useState } from "react";
-const Video = ({ id, setPlayVideo }) => {
+const Video = ({ videos, setPlayVideo }) => {
   const [key, setKey] = useState("");
   useEffect(() => {
-    (async () => {
-      const res = await fetch(
-        `http://api.themoviedb.org/3/movie/${id}/videos?api_key=${process.env.API_KEY}`
-      );
-      const data = await res.json();
-      data.results.map((item) => {
-        if (item.type === "Trailer") {
-          setKey(item.key);
-        }
-      });
-    })();
-  }, [id]);
+    videos.results.map((item) => {
+      if (item.type === "Trailer") {
+        setKey(item.key);
+      }
+    });
+  }, []);
 
   return (
     <div
@@ -24,13 +18,17 @@ const Video = ({ id, setPlayVideo }) => {
       }}
     >
       <div className={styles.iframeContainer}>
-        <iframe
-          src={`https://www.youtube.com/embed/${key}`}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
-          frameBorder="0"
-          allowFullScreen
-          title="Embeded video"
-        ></iframe>
+        {key ? (
+          <iframe
+            src={`https://www.youtube.com/embed/${key}`}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
+            frameBorder="0"
+            allowFullScreen
+            title="Embeded video"
+          ></iframe>
+        ) : (
+          "Video unavailable."
+        )}
       </div>
     </div>
   );

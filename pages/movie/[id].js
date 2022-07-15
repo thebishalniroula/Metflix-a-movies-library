@@ -3,7 +3,7 @@ import Details from "../../components/Details";
 import Cast from "../../components/Cast";
 import Slider from "../../components/Slider";
 import Head from "next/head";
-const movieDetail = ({ data, reviews, similarMovies, cast }) => {
+const movieDetail = ({ data, reviews, similarMovies, cast, videos }) => {
   return (
     <>
       <Head>
@@ -11,7 +11,7 @@ const movieDetail = ({ data, reviews, similarMovies, cast }) => {
         <meta name="description" content="This is a project done by Bishal." />
         <link rel="icon" href="/MOVIES.png" />
       </Head>
-      <Hero data={data} />
+      <Hero data={data} videos={videos} />
       <Cast cast={cast} />
       <Details data={data} reviews={reviews} />
       <Slider data={similarMovies} title={"Similar movies"} />
@@ -41,12 +41,19 @@ export async function getServerSideProps(context) {
     `https://api.themoviedb.org/3/movie/${id}/credits?api_key=${process.env.API_KEY}&language=en-US`
   );
   const dataCast = await resCast.json();
+
+  const resVideos = await fetch(
+    `http://api.themoviedb.org/3/movie/${id}/videos?api_key=${process.env.API_KEY}`
+  );
+  const dataVideos = await resVideos.json();
+
   return {
     props: {
       data: data,
       reviews: dataReviews.results,
       similarMovies: dataSM.results,
       cast: dataCast.cast,
+      videos: dataVideos,
     },
   };
 }

@@ -1,7 +1,6 @@
 import Nav from "./Nav";
 import Footer from "./Footer";
 import Head from "next/head";
-import image from "../public/socialshareImage.png";
 const Layout = ({ children }) => {
   return (
     <>

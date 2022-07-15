@@ -5,7 +5,7 @@ import Link from "next/link";
 import VideoPlayer from "./VideoPlayer";
 import { useState } from "react";
 import genre_map from "../data/genre_ids";
-const Hero = ({ data }) => {
+const Hero = ({ data, videos }) => {
   const [playVideo, setPlayVideo] = useState(false);
   if (typeof window !== "undefined") {
     if (playVideo) {
@@ -29,7 +29,7 @@ const Hero = ({ data }) => {
         backgroundImage: `url(https://image.tmdb.org/t/p/original/${data.backdrop_path})`,
       }}
     >
-      {playVideo && <VideoPlayer id={data.id} setPlayVideo={setPlayVideo} />}
+      {playVideo && <VideoPlayer videos={videos} setPlayVideo={setPlayVideo} />}
       <div className={styles.overlay}></div>
       <div className={styles.card}>
         <Link href={`/movie/${data.id}`}>

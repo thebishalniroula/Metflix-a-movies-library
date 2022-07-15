@@ -1,0 +1,18 @@
+.LoadingAnimation {
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: white;
+  height: 3px;
+  z-index: 999999999999;
+  animation: loading 3s linear;
+}
+
+@keyframes loading {
+  0% {
+    width: 5%;
+  }
+  100% {
+    width: 98%;
+  }
+}
