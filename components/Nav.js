@@ -26,7 +26,7 @@ const Nav = () => {
       <nav className={styles.nav}>
         <Link href={"/"}>
           <div className={styles.logo}>
-            <Image src={Movies} height={40} width={40} alt={"logo"} />
+            <Image src={Movies} height={30} width={30} alt={"logo"} />
             <span>OVIES</span>
           </div>
         </Link>
