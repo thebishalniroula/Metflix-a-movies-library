@@ -2,7 +2,7 @@
   top: 0;
   left: 0;
   position: fixed;
-  background-color: white;
+  background-color: rgb(215, 208, 208);
   height: 3px;
   z-index: 999999999999;
   animation: loading 3s linear;
