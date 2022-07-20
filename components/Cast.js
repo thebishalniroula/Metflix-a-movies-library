@@ -9,7 +9,7 @@ const Cast = ({ cast: casts }) => {
   const [cast, setCast] = useState([]);
   useEffect(() => {
     setCast(allCast.current.slice(0, calculateItemsInaRow() * 2));
-  }, []);
+  }, [casts]);
   const calculateItemsInaRow = () => {
     const items = parseInt(
       (castContainer.current.clientWidth / 16 + 1.25) / (9.375 + 1.25)

@@ -1,5 +1,6 @@
 import styles from "../styles/VideoPlayer.module.css";
 import { useEffect, useState } from "react";
+
 const Video = ({ videos, setPlayVideo }) => {
   const [key, setKey] = useState("");
   useEffect(() => {
