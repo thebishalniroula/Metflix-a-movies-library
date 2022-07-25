@@ -2,7 +2,7 @@
 
 Metflix is a full fledged movies library website that uses NextJS as its frontend layer and The Movie DataBase API as the data souce.
 
-### Live link: [METFLIX](https://metflix-one.vercel.app)
+### Live link: [M E T F L I X](https://metflix-one.vercel.app)
 ## Prerequisites
 
 You will need [Node.js](https://nodejs.org) version 8.0 or greater installed on your system.
