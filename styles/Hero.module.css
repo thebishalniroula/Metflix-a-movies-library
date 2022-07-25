@@ -77,7 +77,16 @@
   font-size: 2rem;
   vertical-align: bottom;
 }
-
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+.secondary {
+  display: block;
+  padding: 0.8rem 1.8rem;
+  background-color: rgba(0, 0, 0, 0.406);
+  border: 2px solid rgb(180, 143, 8);
+}
 @media (max-width: 450px) {
   .container {
     height: 92vh;

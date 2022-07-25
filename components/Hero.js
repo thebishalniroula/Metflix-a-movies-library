@@ -56,6 +56,17 @@ const Hero = ({ data, videos }) => {
             <Image src={playicon} height={16} width={16} alt={"play button"} />
             <p>Play trailer</p>
           </button>
+          <button
+            className={`${styles.button} ${styles.secondary}`}
+            onClick={() => {
+              window.open(
+                `https://www.1377x.to/search/${data.title}/1/`,
+                "_blank"
+              );
+            }}
+          >
+            <p>Find torrent</p>
+          </button>
         </div>
       </div>
     </div>
