@@ -8,9 +8,11 @@ const Cast = ({ cast: casts }) => {
   const castContainer = useRef();
   const [cast, setCast] = useState([]);
   useEffect(() => {
+    allCast.current = casts;
     setCast(() => {
       return allCast.current.slice(0, calculateItemsInaRow() * 2);
     });
+    console.log(allCast.current);
   }, [casts]);
   const calculateItemsInaRow = () => {
     const items = parseInt(
