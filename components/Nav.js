@@ -3,10 +3,11 @@ import Link from "next/link";
 import Movies from "../public/MOVIES.png";
 import styles from "../styles/Nav.module.css";
 import { useState } from "react";
+import { debounce } from "debounce";
 
 const Nav = () => {
   const [results, setResults] = useState([]);
-  async function fetchSearchResults(searchQuery) {
+  const fetchSearchResults = debounce(async (searchQuery) => {
     try {
       const res = await fetch(
         `https://api.themoviedb.org/3/search/movie?api_key=bd6a2026fa1f05b7d0721dfd7fe8d4c5&language=en-US&query=${searchQuery}&page=1&include_adult=false`
@@ -20,7 +21,7 @@ const Nav = () => {
     } catch (error) {
       setResults([]);
     }
-  }
+  }, 1000);
   return (
     <div>
       <nav className={styles.nav}>
