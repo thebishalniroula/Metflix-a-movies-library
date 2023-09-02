@@ -23,7 +23,7 @@ Once downloaded, open the terminal in the project directory, and install depende
 npm install
 ```
 
-Go to [TBDB](https://www.themoviedb.org/) and get an API access Key.
+Go to [TMDB](https://www.themoviedb.org/) and get an API access Key.
 
 Once you get an API key, set up environment variables with:
 
